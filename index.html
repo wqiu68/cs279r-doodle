@@ -1,81 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Doodle</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doodle</title>
 
     <!-- connects this page with main.css (style) -->
 	<link rel="stylesheet" href="main.css" />
 
-	<!-- adding in fonts -->
+    <!-- adding in fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 
 </head>
 <body>
+    <section class = "greeting">
+        <h1 class = "title">
+            Select your preferred times
+        </h1>
+    </section>
 
-	<main class="app">
-		<!-- heading -->
-		<section class="greeting">
-			<h2 class="title">
-				Select your preferred times
-			</h2>
-			<h5>
-				Please select all of your availabilities.
-			</h5>
-		</section>
-		
-		<!-- creating a to-do -->
-		<section class="create-todo">
-			<h3>ORDER BY DATE</h3>
-			<form id="new-todo-form">
-				<h4>What's on your todo?</h4>
-
-                <!-- light text in a box as example -->
-				<input 
-					type="text" 
-					placeholder="e.g. Read assigned readings for CS279r"
-					name="content"
-					id="content" />
-				
-                <!-- categorizing your to-do assignments  -->
-				<h4>Pick a category</h4>
-				<div class="options">
-					<label>
-						<input type="radio" name="category" id="category1" value="school" /> 
-                        <!-- icon -->
-						<span class="bubble school"></span>
-						<div>School</div>
-					</label>
-					<label>
-						<input type="radio" name="category" id="category2" value="personal" />
-                        <!-- icon -->
-						<span class="bubble personal"></span>
-						<div>Personal</div>
-					</label>
-				</div>
-
-                <!-- adds todo to the list -->
-				<input type="submit" value="Add task" />
-			</form>
-		</section>
-
-
-		<!-- where the todo list is and each assignment listed-->
-		<section class="todo-list">
-			<h3>TODO LIST</h3>
-			<div class="list" id="todo-list"></div>
-		</section>
-
-
-	</main>
-
-    <!-- adding in javascript -->
-	<script src="main.js"></script>
-
+    <section class = "small-title">
+        <h3> Please select all of your availabilities.</h3>
+    </section>
 </body>
 </html>
