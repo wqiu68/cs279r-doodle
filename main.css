@@ -13,7 +13,6 @@ body {
     align-items: center;
 }
 
-
 h1{
     font-size: 36px;
     font-weight: 600;
@@ -32,6 +31,11 @@ p{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+}
+
+.submit{
+    justify-content: center;
+    text-align: center; 
 }
 
 
@@ -77,18 +81,20 @@ h4 {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: px;50
     padding-bottom: 0px;
 }
 
 .pil-col{
     flex-basis: 32%;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 5%;
+    margin-right: 1.5%;
     text-align: left;
-    padding: 0px 12px;
+    padding: 10px 12px;
     box-sizing: border-box;
     transition: 0.5s;
+    background-color: rgb(108, 201, 235);
 }
 
 .pil-col p{
@@ -107,7 +113,7 @@ h4 {
 }
 
 .pil-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 @media(max-width: 700px){
@@ -151,4 +157,13 @@ h5{
     color: #888;
     font-weight: 100;
     padding: 0;
+}
+/* --------------------------- submit button formatting --------------------------*/
+
+.pillarthree{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0px;
 }

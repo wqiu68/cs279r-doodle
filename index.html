@@ -17,192 +17,97 @@
 </head>
 
 <body>
-
+    <!-- sets the title layout on the page -->
     <section class = "greeting">
         <h1 class = "title">
-            Select your preferred times
+            Doodle Implementation
         </h1>
     </section>
 
+    <!-- sets a smaller font for the subtitle -->
     <section class = "small-title">
         <h3> Please select all of your availabilities.</h3>
     </section>
 
+    <!-- creates the different times options -->
     <section class="pillartwo">
-        
+    <!-- stores the information on what was selected as time -->
+	<form onsubmit="return handleData()">
         <div class="row">
         <div class="pil-col">
-            <h3> October 1st </h3>
+            <h3> Mon Oct 1 </h3>
             <p>
             10:30 AM - 11:30 AM
             <br>
             <br>
             </p>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>Yes, I can make this.</p>
-            </label>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>Yes, if needed.</p>
-            </label>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>No, I cannot make this.</p>
-            </label>
+            <!-- checkboxes -->
+			<input type="checkbox" name="Mon Oct 1 10:30 AM - 11:30 AM" value="Yes">Yes<br>
+			<input type="checkbox" name="Mon Oct 1 10:30 AM - 11:30 AM" value="Yes, if needed">Yes, if needed<br>
         </div>
     
         <div class="pil-col">
-            <h3> October 2nd </h3>
+            <h3> Tue Oct 2 </h3>
             <p>
             5:00 PM - 6:00 PM 
             <br>
             <br>
             </p>
 
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>Yes, I can make this.</p>
-            </label>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>Yes, if needed.</p>
-            </label>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>No, I cannot make this.</p>
-            </label>
+            <input type="checkbox" name="Tue Oct 2 5:00 PM - 6:00 PM" value="Yes">Yes<br>
+			<input type="checkbox" name="Tue Oct 2 5:00 PM - 6:00 PM" value="Yes, if needed">Yes, if needed<br>
         </div>
     
         <div class="pil-col">
-            <h3> October 3rd</h3>
+            <h3> Wed Oct 3</h3>
             <p>
             2:00 PM - 3:00 PM  
             <br>
             <br>
             </p>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>Yes, I can make this.</p>
-            </label>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>Yes, if needed.</p>
-            </label>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>No, I cannot make this.</p>
-            </label>
+			<input type="checkbox" name="Wed Oct 3 2:00 PM - 3:00 PM" value="Yes">Yes<br>
+			<input type="checkbox" name="Wed Oct 3 2:00 PM - 3:00 PM" value="Yes, if needed">Yes, if needed<br>
         </div>
+
+		<div class="pil-col">
+            <h3> Thu Oct 4</h3>
+            <p>
+            2:00 PM - 3:00 PM  
+            <br>
+            <br>
+            </p>
+			<input type="checkbox" name="Thu Oct 4 2:00 PM - 3:00 PM" value="Yes">Yes<br>
+			<input type="checkbox" name="Thu Oct 4 2:00 PM - 3:00 PM" value="Yes, if needed">Yes, if needed<br>
         </div>
-    
+
+		<div class="pil-col">
+            <h3> Fri Oct 5</h3>
+            <p>
+            2:00 PM - 3:00 PM  
+            <br>
+            <br>
+            </p>
+			<input type="checkbox" name="Thu Oct 5 2:00 PM - 3:00 PM" value="Yes">Yes<br>
+			<input type="checkbox" name="Thu Oct 5 2:00 PM - 3:00 PM" value="Yes, if needed">Yes, if needed<br>
+        </div>
+	
     </section>
+	<div class="submit">
+		<button type="submit">Submit</button>
+	</div>
+	
+	</form>
 
-
-    <section class="pillartwo">
-        
-        <div class="row">
-        <div class="pil-col">
-            <h3> October 4th </h3>
-            <p>
-            3:30 PM - 4:30 PM
-            <br>
-            <br>
-            </p>
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>Yes, I can make this.</p>
-            </label>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>Yes, if needed.</p>
-            </label>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>No, I cannot make this.</p>
-            </label>
-        </div>
-    
-        <div class="pil-col">
-            <h3> October 5th </h3>
-            <p>
-            10:00 PM - 11:00 PM 
-            <br>
-            <br>
-            </p>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>Yes, I can make this.</p>
-            </label>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>Yes, if needed.</p>
-            </label>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>No, I cannot make this.</p>
-            </label>
-        </div>
-    
-        <div class="pil-col">
-            <h3> October 6th</h3>
-            <p>
-            8:45 AM - 9:45 AM 
-            <br>
-            <br>
-            </p>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>Yes, I can make this.</p>
-            </label>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>Yes, if needed.</p>
-            </label>
-
-            <label class="checkbox" for="myCheckboxId">
-                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
-                <div class="checkbox_box"></div>
-                <p>No, I cannot make this.</p>
-            </label>
-        </div>
-        </div>
-    
-    </section>
-
+    <!-- this is the confrimed submission times that the user selected -->
+	<section class="pillarthree">
+		<h2>See below for your selected times</h2>
+		<div class="row">
+		<div id="times"></div>
+		<div>
+	</section>
 </body>
+<!-- Add javascript  -->
+<script src="main.js"></script>
 
 
 </html>
