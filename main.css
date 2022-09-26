@@ -1,7 +1,7 @@
 /* original sizing */
 * {
-	margin: 0;
-	padding: 0;
+	margin: 50;
+	padding: 50;
 	box-sizing: border-box;
 	font-family: 'montserrat', sans-serif;
 }
@@ -10,15 +10,43 @@
 body {
 	background: var(--light);
 	color: var(--dark);
+    align-items: center;
 }
 
-/* characterisitcs for class */
-section {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
 }
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.pillars{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+/* ----------------------- pillar columns ---------------------------*/
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: -20px
+}
+
 
 /* heading 3 */
 h3 {
@@ -36,20 +64,91 @@ h4 {
 	margin-bottom: 0.5rem;
 }
 
+/* ------------------ smaller screen for pillars part ---------------*/
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* --------------------------- pillars part 2 --------------------------*/
+.pillartwo{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+.pil-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding: 0px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.pil-col p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0px;
+    padding-left: 0;
+}
+.pil-col h3{
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.pil-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* --------------------------- titles settings --------------------------*/
+
+
 /* text style for title */
 .greeting .title {
 	display: flex;
 }
 
 .greeting .title input {
-	margin-left: 0.5rem;
+	margin-left: 10rem;
 	flex: 1 1 0%;
 	min-width: 0;
 }
+
 
 .greeting .title, 
 .greeting .title input {
 	color: var(--dark);
 	font-size: 1.5rem;
 	font-weight: 700;
+}
+
+/* --------------------------- checkboxes--------------------------*/
+
+.checkbox{
+    display: inline-flex; 
+    align-items: center;
+    cursor: pointer;
+}
+
+h5{ 
+    font-size: small;
+    color: #888;
+    font-weight: 100;
+    padding: 0;
 }
